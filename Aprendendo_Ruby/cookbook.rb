@@ -2,9 +2,33 @@ puts "Bem-vindo ao Cookbook, sua rede social de receitas"
 
 receitas = []
 
-puts "Digite o nome da receita: "
-nome = gets.chomp()
+    while(true) do
 
-receitas << nome
+        puts "Digite o nome da receita: "
+        nome = gets.chomp()
 
-puts "Receita #{nome} cadastrada com sucesso!"
+        receitas << nome
+
+        puts
+        puts "Receita #{nome} cadastrada com sucesso!"
+        puts
+        puts "============== Receitas Cadastradas =============="
+
+        #aqui é um uso de for
+        #for receita in receitas do
+         #   puts receita
+        #end
+
+        #aqui é o método each
+        #receitas.each do |receita|
+         #   puts receita
+            
+        #end
+
+        #aqui é o método simplificado
+        puts receitas
+
+        puts
+        puts "=================================================="
+
+    end
